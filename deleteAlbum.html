@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>JavaScript Project</title>
+    <script src="src/c/init.js"></script>
+    <script src="src/m/Album.js"></script>
+    <script src="src/v/deleteAlbum.js"></script>
+    <script>
+      window.addEventListener("load", pl.v.deleteAlbum.setupUserInterface);
+    </script>
+  </head>
+  <body>
+    <form id = "Album">
+      <div><label> Select album:
+        <select name = "selectAlbum">
+          <option value = "">None</option>
+        </select>
+      </label><div>
+      <div><button type = "button" name = "commit">Delete</button></div>
+    </form>
+    <footer>
+      <a href = "index.html">Back to Home</a>
+    </footer>
+  </body>
+</html>
